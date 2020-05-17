@@ -337,7 +337,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         this.route = route;
         this.id = 0;
-        this.myAngularxQrCode = 'http://payne.github.io/qr-info-demo/customer';
+        this.myAngularxQrCode = 'https://payne.github.io/qr-info-demo/#/customer';
       }
 
       _createClass(CustomerComponent, [{
