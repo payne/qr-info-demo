@@ -8,12 +8,14 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class CustomerComponent implements OnInit {
   id = 0;
+  myAngularxQrCode='http://payne.github.io/qr-info-demo/customer';
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.id = params.id;
+      this.myAngularxQrCode += `?id=${this.id}`;
     });
   }
 
